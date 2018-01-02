@@ -1,0 +1,61 @@
+body {
+    margin: 0; #undo stupid browser CSS preset
+}
+
+#splash {
+    /* Background styles*/
+    background: url('assets/tree.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*filter: grayscale(100%);*/
+    background-attachment: fixed;
+
+    /* Fix positioning so no white space*/
+    position: absolute;
+    top:0;
+    left:0;
+
+    /* Everything on the splash page is centers */
+    text-align: center;
+
+    z-index: 0;
+}
+
+.screen {
+    /*Sizing styles*/
+    height: 90vh;
+    width: 100vw;
+
+    text-align: center;
+}
+
+#splash h1 {
+    color: whitesmoke;
+    font-size: 3em;
+    margin-top: 30vh;
+}
+
+#box-model-demo {
+    z-index:1;
+    margin-top: 90vh;
+    background: rgb(128, 124, 124);
+}
+
+.this-is-the-box {
+    margin: 0 auto; /* This is the handiest centering trick for block-level elements.*/
+
+    background: red;
+
+    padding: 40px;
+
+    width: 50vw;
+
+    border: 10px solid purple;
+
+    margin-top: 30px; /*Experiment with setting different values here. */
+}
+
+img {
+    width: 100px;
+}
